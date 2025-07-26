@@ -19,13 +19,36 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            List(shoppingItems) { shoppingItem in
-                HStack {
-                    Text(shoppingItem.title)
-                    Spacer()
-                    Text(shoppingItem.price)
+            
+            List {
+                
+                ForEach(shoppingItems) { shoppingItem in
+                    HStack {
+                            Text(shoppingItem.title)
+                            Spacer()
+                            Text(shoppingItem.price)
+                                    }
                 }
+                Text("ShoppingItems")
+                
+                ForEach(shoppingItems) { shoppingItem in
+                    HStack {
+                            Text(shoppingItem.title)
+                            Spacer()
+                            Text(shoppingItem.price)
+                                    }
+                }
+                
             }
+            
+            
+//            List(shoppingItems) { shoppingItem in
+//                HStack {
+//                    Text(shoppingItem.title)
+//                    Spacer()
+//                    Text(shoppingItem.price)
+//                }
+//            }
         }
     }
 }
