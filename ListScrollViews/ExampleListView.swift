@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ExampleListView: View {
     
     @State private var shoppingItems: [ShoppingModel] = [
             ShoppingModel(title: "Apple AirPods Pro", price: "$249"),
@@ -54,5 +54,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ExampleListView()
 }

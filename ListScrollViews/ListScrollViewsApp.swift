@@ -11,7 +11,7 @@ import SwiftUI
 struct ListScrollViewsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExampleListView()
         }
     }
 }
